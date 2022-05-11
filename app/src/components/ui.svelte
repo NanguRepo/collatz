@@ -1,5 +1,6 @@
 <script lang="ts">
     import Chart from "../components/chart.svelte"
+    import Stats from "../components/stats.svelte"
     const collatz = (n: number) => {
         // create a new array with every value in the collatz conjecture with n as the seed
         const arr = [n]
@@ -24,14 +25,13 @@
                 hoverBorderColor: "rgba(255,99,132,1)",
                 data: data
             }
-        ], 
+        ]
     }
-    
 </script>
 
 <div class="bg-slate-200 shadow-lg rounded-lg px-4 py-4 w-11/12 md:w-4/5 h-full m-auto mt-10 dark:bg-slate-700">
     <div class="pb-10 flex flex-row">
-        <input type="number" class="bg-slate-100 dark:bg-slate-600 rounded ml-1 py-2 px-4" placeholder="Any positive number" bind:value={x} />
+        <input type="number" class="bg-slate-100 dark:bg-slate-600 rounded ml-1 py-2 px-4 text-xl" placeholder="Any positive number" bind:value={x} />
         <button 
             class="rounded bg-slate-300 hover:bg-slate-400 dark:bg-slate-500 dark:hover:bg-slate-500/75 py-2 px-4"
             on:click={() => {
@@ -41,6 +41,9 @@
         >
             Get a random number
         </button>
+        <div class="w-auto h-auto ml-auto">
+            <Stats data={data}/>
+        </div>
     </div>
     <div class="rounded bg-gray-100/50 dark:bg-gray-800/50 w-full h-full">
         <Chart data={chartData}/>
