@@ -15,6 +15,6 @@
         };
 </script>
 
-<div>
+<div class="h-full w-full">
   	<Line bind:data={data}/>
 </div>
