@@ -5,11 +5,11 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content=""><title>Collatz Conjecture Visualizer</title>
-	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-0779efe4.css">
-	<link rel="modulepreload" href="/_app/start-6937a97f.js">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-d5fabf6f.css">
+	<link rel="modulepreload" href="/_app/start-0d1b5021.js">
 	<link rel="modulepreload" href="/_app/chunks/index-19fa0f19.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-81b07611.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-c4fdf464.js">
+	<link rel="modulepreload" href="/_app/pages/index.svelte-d448bf16.js">
 	</head>
 	<body>
 		<div>
@@ -17,18 +17,19 @@
 
 
 
-<body class="dark:bg-gray-800 dark:text-white"><div class="px-4 py-4 w-4/5 m-auto mt-10 text-center"><h1 class="text-7xl font-bold">Collatz Conjecture Visualizer</h1>
-        <h2 class="text-2xl text-gray-600 dark:text-gray-400">Put in a number. We&#39;ll halve it if it&#39;s even, and triple it and add one if it&#39;s odd. Keep doing that, and it&#39;ll <a class="text-blue-600 dark:text-blue-300 hover:underline hover:animate-pulse" href="https://en.wikipedia.org/wiki/Collatz_conjecture" target="_blank">eventually become one</a>. This is plotted to a graph in order to visualize.</h2></div>
-    <div class="bg-slate-200 shadow-lg rounded-lg px-4 py-4 w-4/5 m-auto mt-10 dark:bg-slate-700"><div class="pb-10"><input type="number" class="bg-slate-100 dark:bg-slate-600 rounded ml-1 py-2 px-4" placeholder="Any positive number">
+<body class="dark:bg-gray-800 dark:text-white"><div class="px-4 py-4 w-4/5 m-auto mt-10 text-center"><h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold">Collatz Conjecture Visualizer</h1>
+        <h2 class="text-md sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-400">Enter any positive number. We&#39;ll halve it if it&#39;s even, and triple it and add one if it&#39;s odd. Keep doing that, and it&#39;ll <a class="text-blue-600 dark:text-blue-300 hover:underline hover:animate-pulse" href="https://en.wikipedia.org/wiki/Collatz_conjecture" target="_blank">eventually end up at one</a>. This is plotted to a graph in order to visualize.</h2></div>
+    <div class="bg-slate-200 shadow-lg rounded-lg px-4 py-4 w-11/12 md:w-4/5 h-full m-auto mt-10 dark:bg-slate-700"><div class="pb-10 flex flex-row"><input type="number" class="bg-slate-100 dark:bg-slate-600 rounded ml-1 py-2 px-4" placeholder="Any positive number">
         <button class="rounded bg-slate-300 hover:bg-slate-400 dark:bg-slate-500 dark:hover:bg-slate-500/75 py-2 px-4">Get a random number
         </button></div>
-    <div class="rounded bg-gray-100/50 dark:bg-gray-800/50"><div><canvas></canvas></div></div></div></body>
+    <div class="rounded bg-gray-100/50 dark:bg-gray-800/50 w-full h-full"><div class="h-full w-full"><canvas></canvas></div></div></div>
+    <div class="pt-5"></div></body>
 
 
-		<script type="module" data-hydrate="7vxh8h">
-		import { start } from "/_app/start-6937a97f.js";
+		<script type="module" data-hydrate="ozplfm">
+		import { start } from "/_app/start-0d1b5021.js";
 		start({
-			target: document.querySelector('[data-hydrate="7vxh8h"]').parentNode,
+			target: document.querySelector('[data-hydrate="ozplfm"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -39,7 +40,7 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-81b07611.js"),
-						import("/_app/pages/index.svelte-c4fdf464.js")
+						import("/_app/pages/index.svelte-d448bf16.js")
 				],
 				params: {},
 				routeId: ""
