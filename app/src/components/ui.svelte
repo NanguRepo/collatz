@@ -30,10 +30,10 @@
 </script>
 
 <div class="bg-slate-200 shadow-lg rounded-lg px-4 py-4 w-11/12 md:w-4/5 h-full m-auto mt-10 dark:bg-slate-700">
-    <div class="pb-10 flex flex-row">
-        <input type="number" class="bg-slate-100 dark:bg-slate-600 rounded ml-1 py-2 px-4 text-xl" placeholder="Any positive number" bind:value={x} />
+    <div class="pb-3 flex flex-row">
+        <input type="number" class="bg-slate-100 dark:bg-slate-600 rounded ml-1 py-2 px-4 text-xl max-h-32" placeholder="Any positive number" bind:value={x} />
         <button 
-            class="rounded bg-slate-300 hover:bg-slate-400 dark:bg-slate-500 dark:hover:bg-slate-500/75 py-2 px-4"
+            class="rounded bg-slate-300 hover:bg-slate-400 dark:bg-slate-500 dark:hover:bg-slate-500/75 py-2 px-4 max-h-32"
             on:click={() => {
                 // generate a new random number
                 x = Math.floor(Math.random() * 10000)
@@ -45,6 +45,7 @@
             <Stats data={data}/>
         </div>
     </div>
+
     <div class="rounded bg-gray-100/50 dark:bg-gray-800/50 w-full h-full">
         <Chart data={chartData}/>
     </div>
