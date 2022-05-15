@@ -1,6 +1,6 @@
 <script lang="ts">
     import Fa from 'svelte-fa/src/fa.svelte'
-    import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
+    import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons/faQuestionCircle'
     export let data: Array<number>
     $: maxNum = Math.max.apply(Math, data)
     $: sum = data.reduce((acc, n) => acc + n, 0);
