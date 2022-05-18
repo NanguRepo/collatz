@@ -3,6 +3,9 @@
     import Stats from "../components/stats.svelte"
     const collatz = (n: number) => {
         // create a new array with every value in the collatz conjecture with n as the seed
+        if (!n) {
+            return []
+        }
         const arr = [n]
         while (n > 1) {
             n = n % 2 === 0 ? n / 2 : 3 * n + 1;
@@ -13,7 +16,7 @@
     let x: number;
     let chartData: Object;
     $: data = collatz(x);
-    $: chartData = {
+    $: chartData = data !== [] ? {
         labels: [...Array(data.length).keys()],
         datasets: [
             {
@@ -26,7 +29,7 @@
                 data: data
             }
         ]
-    }
+    }:[]
 </script>
 
 <div class="bg-slate-200 shadow-lg rounded-lg px-4 py-4 w-11/12 md:w-4/5 h-full m-auto mt-10 dark:bg-slate-700">
